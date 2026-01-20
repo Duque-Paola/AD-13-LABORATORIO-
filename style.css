@@ -1,0 +1,92 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%)
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 56px 34px;
+    font-family:  sans-serif;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.btn-primary{
+    background: red;
+}
+
+.container2 {
+    background-color: rgb(49, 49, 153);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    overflow: hidden; /* Para que los bordes redondeados corten el contenido */
+}
+
+/* 3. Estilo para las columnas de la primera fila */
+.row .col-2, .row .col-8 {
+    min-height: 200px; /* Altura mínima para que no se vean vacías */
+    display: flex;     /* Usamos flexbox para centrar el texto */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #495057;
+    border: 1px dashed #50a0f0; /* Un borde sutil para ver las divisiones */
+    transition: background-color 0.3s ease;
+}
+
+/* 4. Colores específicos para identificar cada lado */
+.col-2:first-child { 
+    background-color: #f81b1b; /* Lado izquierdo */
+}
+
+.col-8 { 
+    background-color: #fa837b; /* Lado central */
+    font-size: 1.5rem;
+    color: #0d6efd; /* Color azul de Bootstrap */
+}
+
+.col-2:last-child { 
+    background-color: #ebee46; /* Lado derecho */
+}
+
+/* 5. Efecto Hover: ¡Para que se vea interactivo! */
+.row div:hover {
+    background-color: #d1d9e6;
+}
+
+
+
+/* 7. Ajuste para que se vea bien en móviles */
+@media (max-width: 768px) {
+    .row .col-2, .row .col-8 {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+
+.mb-3 {
+    background: linear-gradient(90deg, #212529 0%, #343a40 100%);
+    color: #443c88;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 12px 12px; /* Redondeamos solo las esquinas de abajo */
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+
+
+}
+
